@@ -3,4 +3,4 @@ parcelRequire=function(e,r,t,n){var i,o="function"==typeof parcelRequire&&parcel
 },{}],"Focm":[function(require,module,exports) {
 "use strict";require("./sass/main.scss");const t=["#FFFFFF","#2196F3","#4CAF50","#FF9800","#009688","#795548"],e=document.querySelector('[data-action="start"]'),s=document.querySelector('[data-action="stop"]'),i=document.querySelector("body"),a=(t,e)=>Math.floor(Math.random()*(e-t+1)+t),r={isActive:!1,intervalId:null,start(){if(this.isActive)return;this.isActive=!0,e.classList.add("disabled");const s=t.length-1;this.intervalId=setInterval(()=>{i.style.backgroundColor=t[a(0,s)]},1e3)},stop(){clearInterval(this.intervalId),this.isActive=!1,e.classList.remove("disabled")}};e.addEventListener("click",()=>{r.start()}),s.addEventListener("click",()=>{r.stop()});
 },{"./sass/main.scss":"clu1"}]},{},["Focm"], null)
-//# sourceMappingURL=/goit-js-hw-11-timer/src.b6fb27d4.js.map
+//# sourceMappingURL=/src.b6fb27d4.js.map
